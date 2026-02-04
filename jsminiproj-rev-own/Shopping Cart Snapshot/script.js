@@ -41,4 +41,6 @@ displaycart.addEventListener("click", function() {
 
 displaySnapshot.addEventListener("click", function() {
     alert("snapshot items: " + snapshot);
-})
+});
+
+
