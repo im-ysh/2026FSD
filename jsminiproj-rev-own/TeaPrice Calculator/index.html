@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Price Calculator</title>
+</head>
+<body>
+    <h1>Tea Price Calculator</h1>
+    <label>
+        SELECT TYPE OF TEA
+    <select id="typeofTea">
+        <option value="green tea">green tea</option>
+        <option value="oolong tea">oolong tea</option>
+        <option value="black tea">black tea</option>
+        <option value="choco tea">choco tea</option>
+    </select>
+    </label>
+    <button id="inc">+</button>
+    <span id="qty">0</span>
+    <button id="dec">-</button>
+     <br> <br><br>
+    <button id = "displaybtn">display</button>
+    <h2 >total price : <span id="totalPrice">0</span></h2>
+    <!-- If you want JS to update the number 0,
+JS needs to target the span directly.
+so id is fr directly span -->
+    <script src="./script.js"></script>
+</body>
+</html>
