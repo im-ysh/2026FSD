@@ -16,7 +16,7 @@ filterButton.addEventListener("click" , function() {
     const limitval = Number(limitLabel.value);
     let output = "";
     for(let city in cities) {
-        if(cities.city > limitval) {
+        if(cities[city]> limitval) {
             output += city + " ( " + cities[city] + ")\n";
         }
     }
