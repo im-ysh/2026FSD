@@ -23,9 +23,10 @@ avgbtn.addEventListener("click" , function() {
 
 
 topbtn.addEventListener("click" , function() {
-    const total = students.map(students => students.score);
-    const max = Math.max(...total);
-    display.textContent = `top scorer of the class : ${max} by the student: ${students.find(students => students.score === max).name}`;
+   const scores = students.map(students => students.score);
+   const topscore = Math.max(...scores);
+   const topstudent = students.find(students => students.score === topscore);
+   display.textContent = `${topscore} by student ${topstudent.name}`;
 });
 
 
@@ -34,3 +35,4 @@ passbtn.addEventListener("click" , function() {
     const passedstu = pass.map(students => students.name)
     display.textContent = `passed students : ${passedstu} by the scores : ${pass.map(students => students.score)}`;
 });
+
